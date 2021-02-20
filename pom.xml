@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
-  <modelVersion>4.0.0</modelVersion>    
-  <groupId>prateek.malhotra</groupId>    
-  <artifactId>kafka-parent</artifactId>    
-  <version>1.0-SNAPSHOT</version>    
-  <packaging>pom</packaging>    
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>prateek.malhotra</groupId>
+  <artifactId>kafka-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <name>kafka-parent</name>
 
   <properties>
     <kafka.version>2.1.0</kafka.version>
     <junit.version>4.11</junit.version>
+    <avro.version>1.8.2</avro.version>
   </properties>
-  
-  <modules>      
-    <module>kafka-basic</module>      
+
+  <modules>
+    <module>kafka-basic</module>
   </modules>
 
   <dependencyManagement>
@@ -29,7 +30,22 @@
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
       </dependency>
-    </dependencies> 
+      <dependency>
+        <groupId>org.apache.avro</groupId>
+        <artifactId>avro-compiler</artifactId>
+        <version>${avro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.avro</groupId>
+        <artifactId>avro-maven-plugin</artifactId>
+        <version>${avro.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.avro</groupId>
+        <artifactId>avro</artifactId>
+        <version>${avro.version}</version>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
 
 </project>
