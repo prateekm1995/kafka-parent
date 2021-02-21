@@ -4,6 +4,6 @@
     "fields": [
         {"name": "id", "type": "int"},
         {"name": "name",  "type": "string"},
-        {"name": "faxNumber", "type": ["null", "string"], "default": "null"} 1
+        {"name": "email", "type": ["null", "string"], "default": "null"} 
     ]
-   }
+}

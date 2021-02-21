@@ -3,7 +3,6 @@ package prateek.malhotra.kafka.kafkaproducers;
 import java.util.Scanner;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-
 import prateek.malhotra.kafka.PropertyGenerator;
 
 public class StringProducer {
